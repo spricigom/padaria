@@ -23,19 +23,19 @@
 
                     <ul class="navbar-nav">
                         <li>
-                            <p><a class="nav-link" href="">HOME</a></p>
+                            <h6><a class="nav-link" href="">HOME</a></h6>
                         </li>
 
                         <li>
-                             <p><a class="nav-link" href="">CARDÁPIO</a></p>
+                             <h6><a class="nav-link" href="">CARDÁPIO</a></h6>
                         </li>
 
                         <li>
-                             <p><a class="nav-link" href="">MINHAS COMPRAS</a></p>
+                             <h6><a class="nav-link" href="">MINHAS COMPRAS</a></h6>
                         </li>
 
                         <li>
-                             <p><a class="nav-link" href="">FUNCIONARIOS</a></p>
+                             <h6><a class="nav-link" href="">FUNCIONARIOS</a></h6>
                         </li>
                         
                     </ul>
@@ -73,7 +73,7 @@
                             <div class="campo">
                                 <h1>VENDAS DE PRODUTOS</h1>
                             </div>
-                                <img class="imagem" src="@/assets/grafico.png" alt="">
+                                <img class="imagem" src="@/assets/venda.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ li{
 }
 
 .fundo {
-    height: 100vh;
+    height: 83vh;
     background-color: #fcf9c6;
 }
 
@@ -145,10 +145,15 @@ img {
     height: 68vh;
     border-radius: 10px;
 }
-
+h1{
+    font-size: 3.5vh;
+}
+h6{
+    font-size: 2vh;
+}
 .campo {
     height: 15vh;
-    top: 146px;
+    top: 145px;
     position: relative;
     border-bottom-left-radius: 90px;
     border-bottom-right-radius: 90px;
