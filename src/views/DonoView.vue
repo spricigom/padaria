@@ -102,6 +102,12 @@
 
 
 <style scoped>
+template{
+max-width: 100vh;}
+h1{
+    margin-top: 10px;
+    font-size: 3.5vh;
+}
 .nav-link{
     color: white;
 }
@@ -120,19 +126,19 @@ li{
 }
 
 .fundo {
-    height: 100vh;
+    height: 83vh;
     background-color: #fcf9c6;
 }
 
 .col {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 50px;
     height: 100%;
 }
 
 .produto {
-    margin-top: -93px;
+    margin-top: -123px;
     box-shadow: .00001px -10px;
 }
 
@@ -148,10 +154,10 @@ img {
 
 .campo {
     height: 15vh;
-    top: 146px;
+    top: 145px;
     position: relative;
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     background-color: #642D0E;
     color: white;
 }
