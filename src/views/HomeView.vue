@@ -4,6 +4,7 @@ import { RouterLink } from 'vue-router'
 
 <template>
     <RouterLink to="/dono">Ver perfil </RouterLink> 
+    <router-link to="/funcionario">Ver perfil</router-link>
 </template>
 
 
