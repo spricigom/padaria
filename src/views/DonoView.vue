@@ -58,6 +58,9 @@
                                 <h1>PRODUTOS CONSUMIDOS</h1>
                             </div>
                                 <img class="imagem" src="@/assets/pao.jpeg" alt="">
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -66,6 +69,9 @@
                                 <h1>ATENDIMENTO AO CLIENTE</h1>
                             </div>
                                 <img class="imagem" src="@/assets/atendimento.jpeg" alt="">
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">FAÇA SUA COMPRA ONLINE!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -74,6 +80,9 @@
                                 <h1>VENDAS DE PRODUTOS</h1>
                             </div>
                                 <img class="imagem" src="@/assets/venda.jpg" alt="">
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,7 +116,12 @@
 }
 
 li{
-    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.textoBaixo{
+    padding-top: 7px;
+    font-family: "IM Fell Great Primer", serif;
 }
 
 .navbar-brand{
@@ -147,6 +161,7 @@ img {
 }
 h1{
     font-size: 3.5vh;
+    padding: 35px;
 }
 h6{
     font-size: 2vh;
@@ -157,6 +172,15 @@ h6{
     position: relative;
     border-bottom-left-radius: 90px;
     border-bottom-right-radius: 90px;
+    background-color: #642D0E;
+    color: white;
+}
+.campoBaixo {
+    height: 3.5vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    bottom: 50px;
+    position: relative;
     background-color: #642D0E;
     color: white;
 }

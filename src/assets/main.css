@@ -7,3 +7,24 @@ h6{
     font-family: "Inder", sans-serif;
 }
 
+.nav-link{
+    color: white;
+}
+
+li{
+    margin-left: 60px;
+}
+
+.textoBaixo{
+    padding-top: 7px;
+    font-family: "IM Fell Great Primer", serif;
+}
+
+.navbar-brand{
+    width: 18vh;
+}
+.navbar {
+    height: 17vh;
+    background-color: #4D1C01;
+    justify-content: space-between;
+}
