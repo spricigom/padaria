@@ -3,8 +3,12 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <RouterLink to="/dono">Pagina do Dono </RouterLink><br>
+    <RouterLink to="/dono">Pagina do Dono </RouterLink>
+    <br>
     <RouterLink to="/loginprincipal">Login Principal </RouterLink>
+    <br>
+    <RouterLink to="/Clientes">Clientes </RouterLink>
+
 
 </template>
 
