@@ -59,26 +59,77 @@
                             <div class="icones">
                                 <div>
                                     <img src="@/assets/whatsapp.png" alt="" class="icone">
-                                    <p>(47) 98204-2389</p> 
+                                    <p>(47) 98204-2389</p>
                                 </div>
 
                                 <div>
                                     <img src="@/assets/instagram.png" alt="" class="icone">
-                                    <p>@padariasantopao</p> 
+                                    <p>@padariasantopao</p>
                                 </div>
 
                                 <div>
                                     <img src="@/assets/mensageiro.png" alt="" class="icone">
-                                    <p>@padariasantopao_</p> 
+                                    <p>@padariasantopao_</p>
                                 </div>
-                               
 
-                               
+
+
                             </div>
                         </div>
                     </div>
                     <div class="col" id="direita">
-                        Column
+                        
+                        
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col" >
+                                   
+                                    <div class="clientes">
+                                        <img src="@/assets/Cliente1.jpeg" alt="">
+                                        <div class="textoClientes">
+                                             <h3>1 LUGAR</h3>
+                                        <p style="font-size: 2.2vh;">R$ 15.000 em produtos!</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div class="clientes">
+                                        <img src="@/assets/Cliente2.jpeg" alt="">
+                                        <div class="textoClientes">
+                                             <h3>2 LUGAR</h3>
+                                        <p style="font-size: 2.2vh;">R$ 10.000 em produtos!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="clientes">
+                                        <img src="@/assets/Cliente3.jpeg" alt="">
+                                        <div class="textoClientes">
+                                             <h3>3 LUGAR</h3>
+                                        <p style="font-size: 2.2vh;">R$ 9.000 em produtos!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="clientes">
+                                        <img src="@/assets/Cliente4.jpeg" alt="">
+                                        <div class="textoClientes">
+                                             <h3>4 LUGAR</h3>
+                                        <p style="font-size: 2.2vh;">R$ 5.000 em produtos!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
                     </div>
 
                 </div>
@@ -91,19 +142,42 @@
 
 
 <style scoped>
-.icones{
+#direita{
+    margin-left: 50px;
+}
+.clientes{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+
+    background-color: #502D2D;
+}
+.clientes img{
+    margin-top: 10px;
+    width: 85%;
+}
+.icones {
     display: flex;
     justify-content: space-between;
-  
-    margin: 150px 40px  40px;
+
+    margin: 150px 40px 40px;
 }
+
 .icone {
     width: 4.5vw;
     margin-bottom: 10px;
 }
-p{
+h3{
+    font-size: 3vh
+}
+p {
     font-family: "inder", serif;
     font-size: 2.3vh;
+}
+.textoClientes{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 1px;
 }
 h2 {
     padding-top: 25px;
