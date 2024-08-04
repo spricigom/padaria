@@ -5,7 +5,7 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="@/assets/logo.png" alt=""></a>
+                <RouterLink to="/" class="navbar-brand" ><img src="@/assets/logo.png" alt=""> </RouterLink>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +120,7 @@ li{
 }
 
 .textoBaixo{
-    padding-top: 7px;
+    padding-top: -7px;
     font-family: "IM Fell Great Primer", serif;
 }
 
@@ -166,9 +166,10 @@ h1{
 h6{
     font-size: 2vh;
 }
+
 .campo {
     height: 15vh;
-    top: 145px;
+    top: 15vh;
     position: relative;
     border-bottom-left-radius: 90px;
     border-bottom-right-radius: 90px;
