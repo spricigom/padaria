@@ -8,6 +8,8 @@ import { RouterLink } from 'vue-router'
     <RouterLink to="/loginprincipal">Login Principal </RouterLink>
     <br>
     <RouterLink to="/Clientes">Clientes </RouterLink>
+    <br>
+    <RouterLink to="/Cardapio">Cardápio </RouterLink>
 
 
 </template>

@@ -129,7 +129,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
 h3{
     font-size: 3vh
 }
-p {
+p{
     font-family: "inder", serif;
     font-size: 2.3vh;
 }
