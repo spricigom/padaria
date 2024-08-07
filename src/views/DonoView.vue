@@ -70,6 +70,12 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
 
 
 <style scoped>
+template{
+max-width: 100vh;}
+h1{
+    margin-top: 10px;
+    font-size: 3.5vh;
+}
 .nav-link{
     color: white;
 }
@@ -98,14 +104,14 @@ li{
 }
 
 .col {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 50px;
     height: 100%;
 }
 
 .produto {
-    margin-top: -93px;
+    margin-top: -123px;
     box-shadow: .00001px -10px;
 }
 
@@ -130,8 +136,8 @@ h6{
     height: 15vh;
     top: 15vh;
     position: relative;
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     background-color: #642D0E;
     color: white;
 }
