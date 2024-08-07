@@ -1,51 +1,10 @@
 <script setup>
+import HeaderNav from '@/componentes/HeaderNav.vue'
 </script>
 
 <template>
     <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="@/assets/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        </li>
-                    </ul>
-
-
-
-                    <ul class="navbar-nav">
-                        <li>
-                            <p><a class="nav-link" href="">HOME</a></p>
-                        </li>
-
-                        <li>
-                             <p><a class="nav-link" href="">CARDÁPIO</a></p>
-                        </li>
-
-                        <li>
-                             <p><a class="nav-link" href="">MINHAS COMPRAS</a></p>
-                        </li>
-
-                        <li>
-                             <p><a class="nav-link" href="">FUNCIONARIOS</a></p>
-                        </li>
-                        
-                    </ul>
-
-
-
-                   
-                </div>
-            </div>
-        </nav>
+    <HeaderNav />
     </header>
 
     <body>
@@ -58,6 +17,9 @@
                                 <h1>PRODUTOS CONSUMIDOS</h1>
                             </div>
                                 <img class="imagem" src="@/assets/pao.jpeg" alt="">
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -66,6 +28,9 @@
                                 <h1>ATENDIMENTO AO CLIENTE</h1>
                             </div>
                                 <img class="imagem" src="@/assets/atendimento.jpeg" alt="">
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">FAÇA SUA COMPRA ONLINE!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -73,7 +38,10 @@
                             <div class="campo">
                                 <h1>VENDAS DE PRODUTOS</h1>
                             </div>
-                                <img class="imagem" src="@/assets/grafico.png" alt="">
+                                <img class="imagem" src="@/assets/venda.jpg" alt="">
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,7 +81,12 @@ h1{
 }
 
 li{
-    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.textoBaixo{
+    padding-top: -7px;
+    font-family: "IM Fell Great Primer", serif;
 }
 
 .navbar-brand{
@@ -151,13 +124,29 @@ img {
     height: 68vh;
     border-radius: 10px;
 }
+h1{
+    font-size: 3.5vh;
+    padding: 35px;
+}
+h6{
+    font-size: 2vh;
+}
 
 .campo {
     height: 15vh;
-    top: 145px;
+    top: 15vh;
     position: relative;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    background-color: #642D0E;
+    color: white;
+}
+.campoBaixo {
+    height: 3.5vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    bottom: 50px;
+    position: relative;
     background-color: #642D0E;
     color: white;
 }
