@@ -31,13 +31,14 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
             <div class="form text-left">
                 <form @submit.prevent="login">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="email" placeholder="NOME:" style="margin-top:-35px ;">
+                        <input type="text" class="form-control" id="email" placeholder="NOME:"
+                            style="margin-top:-35px ;">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="CPF:">
+                        <input type="number" class="form-control" placeholder="CPF:">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="CIDADE:">
+                        <input type="text" class="form-control" placeholder="CIDADE:">
                     </div>
 
 
@@ -45,27 +46,27 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="SENHA:">
-                    </div>
+                                    <input type="text" class="form-control" placeholder="BAIRRO:">
+                                </div>
                             </div>
                             <div class="col">
                                 <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="SENHA:">
-                    </div>
+                                    <input type="number" class="form-control" placeholder="NUMERO:">
+                                </div>
                             </div>
+                        </div>
+
+
                     </div>
 
-                    
-                    </div>
-                    
                     <div class="mb-3">
-                        <input type="date" class="form-control"  style="margin-top: -50px;">
+                        <input type="date" class="form-control" style="margin-top: -50px;">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="TELEFONE:">
+                        <input type="number" class="form-control" placeholder="TELEFONE:">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="E-MAIL:">
+                        <input type="email" class="form-control" placeholder="E-MAIL:">
                     </div>
                     <div class="mb-3">
                         <input type="password" class="form-control" placeholder="SENHA:">
@@ -73,7 +74,7 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
                     <div class="mb-3">
                         <input type="password" class="form-control" placeholder="CODIGO LOGIN DA EMPRESA:">
                     </div>
-                  
+
 
 
 
@@ -105,7 +106,9 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
     background-size: cover;
     margin-bottom: -1050px;
 }
- 
+.conteiner img{
+    height: 150vh;
+}
 
 .form {
     margin: 50px;
@@ -154,9 +157,10 @@ input {
     width: 500px;
     background-color: #4D1C01;
     position: relative;
-    top: 200px;
+    bottom: 70px;
     left: 565px;
     border-radius: 40px;
+
 }
 
 .formCampo {
@@ -164,7 +168,7 @@ input {
     height: 800px;
     width: 500px;
     position: relative;
-    bottom: 900px;
+    bottom: 1150px;
     left: 565px;
     border-radius: 40px;
 }
@@ -228,4 +232,3 @@ img {
     width: 100%;
 }
 </style>
-
