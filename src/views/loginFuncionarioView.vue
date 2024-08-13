@@ -25,7 +25,7 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
         <div class="fundoForm"></div>
 
         <div class="formCampo text-center">
-            <h1>LOGIN SUPERIOR</h1>
+            <h1>LOGIN FUNCIONÁRIO</h1>
             <p>PREENCHA SUAS INFORMAÇÕES</p>
 
             <div class="form text-left">
@@ -71,10 +71,7 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
                     <div class="mb-3">
                         <input type="password" class="form-control" placeholder="SENHA:">
                     </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="CODIGO LOGIN DA EMPRESA:">
-                    </div>
-
+                   
 
 
 
