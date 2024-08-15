@@ -16,18 +16,7 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
         <headerNav />
     </header>
 
-    <body>
-
         <div class="conteiner">
-            <img src="@/assets/vitrinePadaria.jpg" alt="">
-
-        </div>
-        <div class="fundoForm"></div>
-
-        <div class="formCampo text-center">
-            <h1>LOGIN CLIENTE</h1>
-            <p>PREENCHA SUAS INFORMAÇÕES</p>
-
             <div class="form text-left">
                 <form @submit.prevent="login">
                     <div class="mb-3">
@@ -40,9 +29,9 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
                     <div class="mb-3">
                         <input type="text" class="form-control" placeholder="CIDADE:">
                     </div>
-
-
-                    <div class="container text-center">
+    
+    
+                    <div class="container">
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
@@ -55,10 +44,10 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
                                 </div>
                             </div>
                         </div>
-
-
+    
+    
                     </div>
-
+    
                     <div class="mb-3">
                         <input type="date" class="form-control" style="margin-top: -50px;">
                     </div>
@@ -70,25 +59,25 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
                     </div>
                     <div class="mb-3">
                         <input type="password" class="form-control" placeholder="SENHA:">
+                    </div>    
+    
+                    <div class="perguntaCadastro">
+                        <p>Primeira vez? Faça o seu cadastro!</p>
                     </div>
-                   
-
-
-
-
-
-
-                    <p style="font-size: 2vh; margin-top: -30px;">Primeira vez? Faça o seu cadastro!</p>
-                    <p style="font-size: 2vh; margin-top: -20px;"><a href="#"
-                            style="color: white; text-decoration: none;">CLIENTE</a> - <a href="#"
-                            style="color: white; text-decoration: none;">FUNCIONÁRIO</a> - <a href="#"
-                            style="color: white; text-decoration: none;">SUPERIOR</a></p>
+                    <div class="opcoesCadastro">
+                        <p><a href="#"
+                                style="color: white; text-decoration: none;">CLIENTE</a> - <a href="#"
+                                style="color: white; text-decoration: none;">FUNCIONÁRIO</a> - <a href="#"
+                                style="color: white; text-decoration: none;">SUPERIOR</a></p>
+                    </div>
                     <button class="botao" type="submit">CONFIRMAR</button>
                 </form>
             </div>
-
         </div>
-    </body>
+            
+
+        
+
 </template>
 <style scoped>
 * {
@@ -100,8 +89,9 @@ import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
-    margin-bottom: -1050px;
+    background-image: url('@/assets/vitrinePadaria.jpg');
+    background-position: 100%;
+    /* margin-bottom: -1050px; */
 }
 .conteiner img{
     height: 150vh;
@@ -150,12 +140,12 @@ input {
 
 .fundoForm {
     opacity: 92%;
-    height: 1100px;
+    /* height: 1100px; */
     width: 500px;
     background-color: #4D1C01;
     position: relative;
-    bottom: 70px;
-    left: 565px;
+    /* bottom: 70px; */
+    /* left: 565px; */
     border-radius: 40px;
 
 }
@@ -165,8 +155,8 @@ input {
     height: 800px;
     width: 500px;
     position: relative;
-    bottom: 1150px;
-    left: 565px;
+    /* bottom: 1150px; */
+    /* left: 565px; */
     border-radius: 40px;
 }
 
@@ -196,11 +186,11 @@ li {
 }
 
 .navbar-brand {
-    width: 18vh;
+    /* width: 18vh; */
 }
 
 .navbar {
-    height: 17vh;
+    /* height: 17vh; */
     background-color: #4D1C01;
     justify-content: space-between;
 }
@@ -208,7 +198,7 @@ li {
 
 
 .fundo {
-    height: 83vh;
+    /* height: 83vh; */
     background-color: #fcf9c6;
 }
 
@@ -227,5 +217,13 @@ li {
 .produto,
 img {
     width: 100%;
+}
+
+.perguntaCadastro {
+    font-size: 2vh; margin-top: -30px;
+}
+
+.opcoesCadastro {
+    font-size: 2vh; margin-top: -20px;
 }
 </style>
