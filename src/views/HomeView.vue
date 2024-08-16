@@ -11,9 +11,12 @@ import { RouterLink } from 'vue-router'
     <br>
     <RouterLink to="/Cardapio">Cardápio </RouterLink>
     <br>
-    <RouterLink to="/loginDono">dono</RouterLink>
+    <RouterLink to="/loginDono">Login Dono</RouterLink>
     <br>
-    <RouterLink to="/loginCliente">Cliente</RouterLink>
+    <RouterLink to="/loginCliente">Login Cliente</RouterLink>
+    <br>
+    <RouterLink to="/loginFuncionario">Login Funcionario</RouterLink>
+
 
 
 
