@@ -10,81 +10,60 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
     <body>
         <div class="fundo">
             <div class="textoCima text-center">
-                <h1>AAAAAAAAAAAAA</h1>
-                <p>akpjaskaklnalkas</p>
+                <h1>ITENS DE PADARIA</h1>
+                <p>CONHEÇA OS ITENS MAIS VENDIDOS AQUI NA PADARIA SANTO PÃO</p>
             </div>
-            <div class="container text-center">
-                <div class="row">
+
+
+
+
+            <div class="container text-center  ">
+                <div class="row colunaCima">
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="@/assets/salgados.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
+                        <img src="@/assets/salgados.webp" alt="">
+                        <h2>SALGADOS</h2>
+                        <p>R$ 1,50 CADA</p>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="@/assets/paoDeQueijo.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
+                        <img src="@/assets/paoDeQueijo.jpg" alt="">
+                        <h2>PÃO DE QUEIJO</h2>
+                        <p>R$ 1,00 CADA</p>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="@/assets/pizza.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
+                        <img src="@/assets/pizza.jpg" alt="">
+                        <h2>PIZZAS</h2>
+                        <p>R$ 5,00 POR FATIA</p>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="@/assets/paoDeQueijo.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
+                        <img src="@/assets/pao-frances.webp" alt="">
+                        <h2>PÃO FRANCÊS</h2>
+                        <p>R$ 12,99 O KG</p>
+                    </div>
+                </div>
+
+                <div class="textoCima text-center">
+                <h1>MAIS VENDIDOS</h1>
+            </div>
+
+                <div class="row colunaBaixo">
+                    <div class="col" id="colBaixo">
+                        <img src="@/assets/boloDeChocolate.jpeg" alt="">
+                        <h2>BOLOS</h2>
+                        <p>R$ 108,90 POR KG</p>
+                    </div>
+                    <div class="col" id="colBaixo">
+                        <img src="@/assets/brigadeiro.jpeg" alt="">
+                        <h2>BRIGADEIROS</h2>
+                        <p>R$ 0,50 CADA</p>
+                    </div>
+                    <div class="col" id="colBaixo">
+                        <img src="@/assets/macarrons.jpg" alt="">
+                        <h2>MACARRONS</h2>
+                        <p>R$ 2,00 CADA</p>
                     </div>
                 </div>
             </div>
 
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="@/assets/salgados.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="@/assets/paoDeQueijo.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="@/assets/pizza.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -96,13 +75,56 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
 
 
 <style scoped>
-.fundo{
-    height: 100vh;
-    background-color: #fcf9c6;
-    padding-bottom: 10px;
+h2 {
+    font-family: "Jockey One", sans-serif;
+    color: #461212;
 }
 
-.textoCima{
-    top: 15vh;
+p {
+    font-family: "ABeeZee", sans-serif;
+    color: black;
+}
+
+#colBaixo {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.col {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100%;
+}
+
+.colunaCima {
+    height: 40vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+
+.colunaBaixo {
+    margin-right: 6vw;
+    margin-left: 6vw;
+    height: 40vh;
+
+
+}
+
+.fundo {
+    height: 120vh;
+    background-color: #fcf9c6;
+    padding-top: 50px;
+}
+
+.textoCima {
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+
+img {
+    width: 230px;
+    height: 230px;
+    border: 12px #461212 solid;
 }
 </style>
