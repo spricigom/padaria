@@ -16,6 +16,9 @@ import { RouterLink } from 'vue-router'
     <RouterLink to="/loginCliente">Login Cliente</RouterLink>
     <br>
     <RouterLink to="/loginFuncionario">Login Funcionario</RouterLink>
+    <br>
+    <RouterLink to="/produtosConsumidos">produtos Consumidos</RouterLink>
+
 
 
 

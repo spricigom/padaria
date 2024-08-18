@@ -25,7 +25,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                     <div class="col">
                         <div class="produto">
                             <div class="campo">
-                                <h1>ATENDIMENTO AO CLIENTE</h1>
+                                <h1>ATENDIMENTO </h1>
                             </div>
                                 <img class="imagem" src="@/assets/atendimento.jpeg" alt="">
                             <div class="campoBaixo">
