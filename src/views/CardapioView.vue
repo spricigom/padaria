@@ -57,7 +57,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                         <p>R$ 0,50 CADA</p>
                     </div>
                     <div class="col" id="colBaixo">
-                        <img src="@/assets/macarron.jpeg" alt="">
+                        <img src="@/assets/macarron-Copia.webp" alt="">
                         <h2>MACARRONS</h2>
                         <p>R$ 2,00 CADA</p>
                     </div>
@@ -69,7 +69,6 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
 
 
         </div>
-
     </body>
 </template>
 

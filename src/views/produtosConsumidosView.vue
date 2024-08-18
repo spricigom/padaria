@@ -70,8 +70,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                                     AUMENTE A PRODUÇÃO
                                 </h6>
                             </div>
-                            <img src="@/assets/macarron.jpeg" alt="">
-
+                            <img src="@/assets/macarronCopia.jpeg" alt="">
                         </div>
 
                     </div>
