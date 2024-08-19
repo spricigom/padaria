@@ -23,6 +23,7 @@ import { RouterLink } from 'vue-router'
                     <div class="carousel-caption d-none d-md-block">
                       
                         <h5>BEM -VINDO A <br> PADARAIA SANTO PÃO</h5>
+                        <p>Faça seu login</p>
                     </div>
                 </div>
                 </RouterLink>
@@ -85,6 +86,23 @@ import { RouterLink } from 'vue-router'
             </div>
         </nav>
     </header>
+    <RouterLink to="/dono">Pagina do Dono </RouterLink>
+    <br>
+    <RouterLink to="/loginprincipal">Login Principal </RouterLink>
+    <br>
+    <RouterLink to="/Clientes">Clientes </RouterLink>
+    <br>
+    <RouterLink to="/Cardapio">Cardápio </RouterLink>
+    <br>
+    <RouterLink to="/loginDono">Login Dono</RouterLink>
+    <br>
+    <RouterLink to="/loginCliente">Login Cliente</RouterLink>
+    <br>
+    <RouterLink to="/loginFuncionario">Login Funcionario</RouterLink>
+    <br>
+    <RouterLink to="/produtosConsumidos">produtos Consumidos</RouterLink>
+    <br>
+    <RouterLink to="/relatorio">relatorio</RouterLink>
 
 </template>
 <style scoped>
@@ -109,7 +127,7 @@ li {
     justify-content: space-between;
     display: flex;
     position: relative;
-    bottom: 105vh;
+    bottom: 97vh;
 
 }
 
