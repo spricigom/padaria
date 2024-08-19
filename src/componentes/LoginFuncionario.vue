@@ -1,21 +1,27 @@
 <script setup>
-import HeaderNav from '@/componentes/HeaderNav.vue';
-// const principal = reactive({
-//     email: '',
-//     senha: ''
-
-// })
-// function salvarLogin(novoLogin) {
-//     Object.assign(login, novoLogin)
-// }
+import { reactive } from 'vue';
+const emit = defineEmits(['salvarLoginFuncionario'])
+const funcionario = reactive({
+    nome: '',
+    cpf: '',
+    cidade: '',
+    bairro: '',
+    numero:'',
+    nascimento:'',
+    telefone: '',
+    email:'',
+    senha:''
+})
+function loginFuncionario(){
+    let error = false
+    if (!error) {
+        emit('salvarLoginFuncionario', { ...funcionario })
+    }
+}
 </script>
-
 <template>
-    <header>
-        <headerNav />
-    </header>
 
-    <body>
+<body>
         <div class="conteiner">
             <div class="fundoForm"></div>
 
@@ -28,16 +34,16 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
                 </div>
                 
                  <div class="form">
-                <form @submit.prevent="login">
+                <form @submit.prevent="loginFuncionario">
                     <div class="mb-3">
                         <input type="text" class="form-control" id="email" placeholder="NOME:"
-                            style="margin-top:-4.4vh ;">
+                         v-model="funcionario.nome"   style="margin-top:-4.4vh ;">
                     </div>
                     <div class="mb-3">
-                        <input type="number" class="form-control" placeholder="CPF:">
+                        <input type="number" class="form-control" placeholder="CPF:" v-model="funcionario.cpf">
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="CIDADE:">
+                        <input type="text" class="form-control" placeholder="CIDADE:" v-model="funcionario.cidade">
                     </div>
     
     
@@ -45,30 +51,27 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="BAIRRO:">
+                                    <input type="text" class="form-control" placeholder="BAIRRO:" v-model="funcionario.bairro">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="mb-3">
-                                    <input type="number" class="form-control" placeholder="NUMERO:">
+                                    <input type="number" class="form-control" placeholder="NUMERO:" v-model="funcionario.numero">
                                 </div>
                             </div>
                         </div>
-    
-    
-                    </div>
-    
-                    <div class="mb-3">
-                        <input type="date" class="form-control" style="margin-top: -6.36vh;">
                     </div>
                     <div class="mb-3">
-                        <input type="number" class="form-control" placeholder="TELEFONE:">
+                        <input type="date" class="form-control" style="margin-top: -6.36vh;" placeholder="DATA DE NASCIMENTO" v-model="funcionario.nascimento">
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="E-MAIL:">
+                        <input type="number" class="form-control" placeholder="TELEFONE:" v-model="funcionario.telefone">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="SENHA:">
+                        <input type="email" class="form-control" placeholder="E-MAIL:" v-model="funcionario.email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="SENHA:" v-model="funcionario.senha">
                     </div>    
     
                     <div class="Btn text-center">
@@ -83,23 +86,8 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
         </div>
             
     </body>
-        
-
-        
-
 </template>
 <style scoped>
-* {
-    padding: 0;
-    margin: 0;
-}
-
-
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('@/assets/comidas.jpg');
-    background-position: 100%;
-    height: 135vh;
-}
 .conteiner {
     display: flex;
     align-items: center;

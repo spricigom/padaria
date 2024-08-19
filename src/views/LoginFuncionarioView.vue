@@ -1,29 +1,22 @@
 <script setup>
 import HeaderNav from '@/componentes/HeaderNav.vue';
-import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
+import LoginFuncionario from '@/componentes/LoginFuncionario.vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-function redirecionarPrincipal(){
-    router.push({name: 'Cardapio'});
+function redirecionarFuncionario(){
+    router.push({name: 'Dono'});
 
 }
-
 </script>
 
 <template>
     <header>
         <HeaderNav />
     </header>
-
     <body>
-        <LoginPrincipal @salvar-login="redirecionarPrincipal"/>
-            
+        <LoginFuncionario @salvar-login-funcionario="redirecionarFuncionario"/>
     </body>
-        
-
-        
-
 </template>
 <style scoped>
 * {
@@ -33,6 +26,7 @@ function redirecionarPrincipal(){
 body{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('@/assets/comidas.jpg');
     background-position: 100%;
-    height: 110vh;
+    height: 135vh;
 }
+
 </style>
