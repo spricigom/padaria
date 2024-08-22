@@ -105,6 +105,9 @@ import { RouterLink } from 'vue-router'
     <RouterLink to="/relatorio">relatorio</RouterLink>
     <br>
     <RouterLink to="/pedido">pedido</RouterLink>
+    <br>
+    <RouterLink to="/fornecedores">fornecedores</RouterLink>
+
 
 
 </template>
