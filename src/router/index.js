@@ -53,6 +53,11 @@ const router = createRouter({
       path: '/relatorio',
       name: 'relatorio',
       component: () => import('../views/relatorioView.vue')
+    },
+    {
+      path: '/pedido',
+      name: 'pedido',
+      component: () => import('../views/pedidoView.vue')
     }
   ]
 })

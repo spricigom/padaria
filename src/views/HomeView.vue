@@ -103,6 +103,9 @@ import { RouterLink } from 'vue-router'
     <RouterLink to="/produtosConsumidos">produtos Consumidos</RouterLink>
     <br>
     <RouterLink to="/relatorio">relatorio</RouterLink>
+    <br>
+    <RouterLink to="/pedido">pedido</RouterLink>
+
 
 </template>
 <style scoped>
