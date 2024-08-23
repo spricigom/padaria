@@ -1,14 +1,13 @@
 <script setup>
 import HeaderNav from '@/componentes/HeaderNav.vue';
-import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
+import LoginDono from '@/componentes/LoginDono.vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-function redirecionarPrincipal(){
-    router.push({name: 'Cardapio'});
+function redirecionarDono(){
+    router.push({name: 'produtosConsumidos'});
 
 }
-
 </script>
 
 <template>
@@ -17,8 +16,7 @@ function redirecionarPrincipal(){
     </header>
 
     <body>
-        <LoginPrincipal @salvar-login="redirecionarPrincipal"/>
-            
+         <LoginDono @salvar-login-dono="redirecionarDono" />
     </body>
         
 
@@ -30,9 +28,11 @@ function redirecionarPrincipal(){
     padding: 0;
     margin: 0;
 }
+
+
 body{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('@/assets/comidas.jpg');
     background-position: 100%;
-    height: 110vh;
+    height: 135vh;
 }
 </style>

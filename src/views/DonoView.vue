@@ -25,7 +25,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                     <div class="col">
                         <div class="produto">
                             <div class="campo">
-                                <h1>ATENDIMENTO AO CLIENTE</h1>
+                                <h1>ATENDIMENTO </h1>
                             </div>
                                 <img class="imagem" src="@/assets/atendimento.jpeg" alt="">
                             <div class="campoBaixo">
@@ -70,10 +70,15 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
 
 
 <style scoped>
+.row{
+    padding-top: 3.88vh;
+}
 template{
-max-width: 100vh;}
+max-width: 100vh;
+}
+
 h1{
-    margin-top: 10px;
+    margin-top: 1.29vh;
     font-size: 3.5vh;
 }
 .nav-link{
@@ -81,11 +86,10 @@ h1{
 }
 
 li{
-    margin-left: 60px;
+    margin-left: 3.75vw;
 }
 
 .textoBaixo{
-    padding-top: -7px;
     font-family: "IM Fell Great Primer", serif;
 }
 
@@ -104,15 +108,14 @@ li{
 }
 
 .col {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 50px;
+    margin-left: 1.87vw;
+    margin-right: 1.87vw;
+    margin-bottom: 6.46vh;
     height: 100%;
 }
 
 .produto {
-    margin-top: -123px;
-    box-shadow: .00001px -10px;
+    margin-top: -15.91vh;
 }
 
 .produto,
@@ -122,11 +125,11 @@ img {
 
 .imagem{
     height: 68vh;
-    border-radius: 10px;
+    border-radius: 0.8vw;
 }
 h1{
     font-size: 3.5vh;
-    padding: 35px;
+    padding: 4.52vh;
 }
 h6{
     font-size: 2vh;
@@ -136,16 +139,16 @@ h6{
     height: 15vh;
     top: 15vh;
     position: relative;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 6.25vw;
+    border-bottom-right-radius: 6.25vw;
     background-color: #642D0E;
     color: white;
 }
 .campoBaixo {
     height: 3.5vh;
-    margin-left: 15px;
-    margin-right: 15px;
-    bottom: 50px;
+    margin-left: .93vw;
+    margin-right: .93vw;
+    bottom: 6.46vh;
     position: relative;
     background-color: #642D0E;
     color: white;

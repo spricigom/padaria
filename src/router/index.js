@@ -12,26 +12,57 @@ const router = createRouter({
     {
       path: '/dono',
       name: 'dono',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/DonoView.vue')
     },
     {
       path: '/loginprincipal',
       name: 'loginprincipal',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/LoginPrincipalView.vue')
     },
     {
       path: '/Clientes',
       name: 'Clientes',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/ClientesView.vue')
+    },
+    {
+      path: '/Cardapio',
+      name: 'Cardapio',
+      component: () => import('../views/CardapioView.vue')
+    },
+    {
+      path: '/loginDono',
+      name: 'loginDono',
+      component: () => import('../views/loginDonoView.vue')
+    },
+    {
+      path: '/loginCliente',
+      name: 'loginCliente',
+      component: () => import('../views/loginClienteView.vue')
+    },
+    {
+      path: '/loginFuncionario',
+      name: 'loginFuncionario',
+      component: () => import('../views/LoginFuncionarioView.vue')
+    },
+    {
+      path: '/produtosConsumidos',
+      name: 'produtosConsumidos',
+      component: () => import('../views/produtosConsumidosView.vue')
+    },
+    {
+      path: '/relatorio',
+      name: 'relatorio',
+      component: () => import('../views/relatorioView.vue')
+    },
+    {
+      path: '/pedido',
+      name: 'pedido',
+      component: () => import('../views/pedidoView.vue')
+    },
+    {
+      path: '/fornecedores',
+      name: 'fornecedores',
+      component: () => import('../views/fornecedoresView.vue')
     }
   ]
 })

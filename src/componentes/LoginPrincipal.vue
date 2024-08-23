@@ -8,16 +8,9 @@ const principal = reactive({
 })
 function login() {
     let error = false
-    if (principal.email == '') {
-        alert("Faltou o e-mail")
-        error = true
-    }
-    if (principal.senha == '') {
-        alert("Faltou a senha")
-        error = true
-    }
     if (!error) {
         emit('salvarLogin', { ...principal })
+
     }
 }
 </script>
@@ -40,10 +33,10 @@ function login() {
             <div class="form text-left">
                 <form @submit.prevent="login">
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="E-MAIL:">
+                        <input type="email" class="form-control" id="email" placeholder="E-MAIL:" v-model="principal.email">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="senha" placeholder="SENHA:">
+                        <input type="password" class="form-control" id="senha" placeholder="SENHA:" v-model="principal.senha">
                     </div>
                     <p style="font-size: 2vh; margin-top: -30px;">Primeira vez? Faça o seu cadastro!</p>
                     <p style="font-size: 2vh; margin-top: -20px;"><a href="#"

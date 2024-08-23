@@ -47,7 +47,6 @@ li{
 }
 .navbar {
     height: 17vh;
-    background-color: #4D1C01;
     justify-content: space-between;
 }
 

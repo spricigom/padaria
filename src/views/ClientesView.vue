@@ -102,46 +102,47 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
 
 <style scoped>
 #direita{
-    margin-left: 50px;
+    margin-left: 3.12vw;
 }
 .clientes{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 5.17vh;
 
     background-color: #502D2D;
 }
 .clientes img{
-    margin-top: 10px;
+    margin-top: 1.29vh;
     width: 85%;
 }
 .icones {
     display: flex;
     justify-content: space-between;
 
-    margin: 150px 40px 40px;
+    margin: 19.4vh 2.5vw 2.5vw;
+    
 }
 
 .icone {
     width: 4.5vw;
-    margin-bottom: 10px;
+    margin-bottom: 1.29vh;
 }
 h3{
     font-size: 3vh
 }
-p {
+p{
     font-family: "inder", serif;
     font-size: 2.3vh;
 }
 .textoClientes{
     color: white;
-    padding-top: 10px;
-    padding-bottom: 1px;
+    padding-top: 1.29vh;
+    padding-bottom: .29vh;
 }
 h2 {
-    padding-top: 25px;
+    padding-top: 3.23vh;
     font-family: "IM Fell Great Primer", serif;
-    letter-spacing: 6px;
+    letter-spacing: .37vw;
 }
 
 h5 {
@@ -150,8 +151,8 @@ h5 {
 
 .campo {
     background-color: #EAE7B2;
-    border-radius: 20px;
-    height: 400px;
+    border-radius: 1.25vw;
+    height: 51.74vh;
 }
 
 .fundo {
@@ -172,13 +173,10 @@ body {
 }
 
 li {
-    margin-left: 60px;
+    margin-left: 3.75vw;
 }
 
-.textoBaixo {
-    padding-top: -7px;
-    font-family: "IM Fell Great Primer", serif;
-}
+
 
 .navbar-brand {
     width: 18vh;
@@ -202,7 +200,7 @@ img {
 
 .imagem {
     height: 68vh;
-    border-radius: 10px;
+    border-radius: .62vw;
 }
 
 
