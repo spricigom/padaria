@@ -1,5 +1,5 @@
 <script setup>
-import HeaderNav from '@/componentes/HeaderNav.vue';
+import HeaderNav from '@/componentes/default/HeaderNav.vue';
 import LoginPrincipal from '@/componentes/LoginPrincipal.vue';
 import { useRouter } from 'vue-router';
 
@@ -18,7 +18,6 @@ function redirecionarPrincipal(){
 
     <body>
         <LoginPrincipal @salvar-login="redirecionarPrincipal"/>
-            
     </body>
         
 
@@ -26,13 +25,4 @@ function redirecionarPrincipal(){
 
 </template>
 <style scoped>
-* {
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('@/assets/comidas.jpg');
-    background-position: 100%;
-    height: 110vh;
-}
 </style>

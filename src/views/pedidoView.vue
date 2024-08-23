@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from 'vue';
-import HeaderNav from '@/componentes/HeaderNav.vue'
+import HeaderNav from '@/componentes/default/HeaderNav.vue'
 import Pedido from '@/componentes/Pedido.vue';
 import PedidoResult from '@/componentes/PedidoResult.vue';
 
@@ -29,7 +29,7 @@ function salvarPedido(resultPedido) {
     <body>
          <main>
             <Pedido @enviar-pedido="salvarPedido"/>
-            <PedidoResult :pedido="pedido"/>
+            <!-- <PedidoResult :pedido="pedido"/> -->
         </main>
 
     <footer></footer>

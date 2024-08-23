@@ -94,11 +94,11 @@ import { RouterLink } from 'vue-router'
     <br>
     <RouterLink to="/Cardapio">Cardápio </RouterLink>
     <br>
-    <RouterLink to="/loginDono">Login Dono</RouterLink>
+    <RouterLink to="/cadastro/dono">Login Dono</RouterLink>
     <br>
-    <RouterLink to="/loginCliente">Login Cliente</RouterLink>
+    <RouterLink to="/cadastro/comum">Login Cliente</RouterLink>
     <br>
-    <RouterLink to="/loginFuncionario">Login Funcionario</RouterLink>
+    <RouterLink to="/cadastro/comum">Login Funcionario</RouterLink>
     <br>
     <RouterLink to="/produtosConsumidos">produtos Consumidos</RouterLink>
     <br>

@@ -2,6 +2,7 @@
 defineProps(['pedido'])
 </script>
 <template>
+    <h1>fjaskjfkasjkfjk</h1>
     <h3>{{pedido.produto}}</h3>
     <h3>{{ pedido.quantidade }}</h3>
     <h3>{{ pedido.valorUnitario }}</h3>
