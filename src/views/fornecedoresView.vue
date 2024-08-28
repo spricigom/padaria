@@ -1,11 +1,6 @@
 <script setup>
-import HeaderNav from '@/componentes/default/HeaderNav.vue'
 </script>
 <template>
-    <header>
-        <HeaderNav />
-    </header>
-
     <main>
         <div class="text-center"><h1>CONHECA NOSSOS <br> PRINCIPAIS <br> FORNECEDORES</h1></div>
         <div class="container text-center">

@@ -4,15 +4,15 @@ import Cadastro from '@/componentes/cadastro/CadastroVue.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/',
-      component: () => import('../layouts/DefaultLayout.vue'),
-      children: [
       {
         path: '',
         name: 'home',
         component: () => import('../views/HomeView.vue')
       },
+      {
+      path: '/',
+      component: () => import('../layouts/DefaultLayout.vue'),
+      children: [
       {
         path: '/dono',
         name: 'dono',

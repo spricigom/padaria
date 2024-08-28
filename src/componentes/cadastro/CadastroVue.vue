@@ -24,6 +24,8 @@ function cadastro(){
 </script>
 
 <template>
+    
+
     <div class="formCampo">
             <div class="textoForm text-center">
                 <h1>LOGIN CLIENTE</h1>
@@ -86,8 +88,9 @@ function cadastro(){
 <style scoped>
 .form {
     margin: 6.36vh;
-
 }
+
+
 
 input {
     height: 5.5vh;
@@ -126,7 +129,6 @@ input {
     position: relative;
     border-radius: 5vh;
     right: 33vh;
-
 }
 
 .formCampo h1 {
