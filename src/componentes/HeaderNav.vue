@@ -17,16 +17,16 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li>
-                            <h6><a class="nav-link" href="">HOME</a></h6>
+                           <RouterLink to="/" class="nav-link"> <h6>HOME</h6> </RouterLink>
                         </li>
                         <li>
-                            <h6><a class="nav-link" href="">CARDÁPIO</a></h6>
+                           <RouterLink to="cardapio" class="nav-link"> <h6>CARDÁPIO</h6> </RouterLink>
                         </li>
                         <li>
-                            <h6><a class="nav-link" href="">MINHAS COMPRAS</a></h6>
+                           <RouterLink to="relatorio" class="nav-link"><h6> RELATÓRIO</h6></RouterLink> 
                         </li>
                         <li>
-                            <h6><a class="nav-link" href="">FUNCIONARIOS</a></h6>
+                          <RouterLink to="dono" class="nav-link">  <h6>FUNCIONARIOS</h6> </RouterLink>
                         </li>
                     </ul>
                 </div>

@@ -1,12 +1,10 @@
 <script setup>
-import HeaderNav from '@/componentes/HeaderNav.vue'
+import HeaderNav from '@/componentes/HeaderNav.vue';
 </script>
 
 <template>
-    <header>
-        <HeaderNav />
-    </header>
-
+   
+    <HeaderNav/>
     <body>
         <div class="fundo">
             <div class="esq text-center">
@@ -119,17 +117,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
 
     </body>
 
-    <!--
-    <footer>
-        <footer class="bg-body-tertiary text-center text-lg-start">
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-                © 2020 Copyright:
-                <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-        </footer>
-
-    </footer>
-     -->
+   
 
 </template>
 
@@ -247,7 +235,7 @@ h6 {
 
 img {
     height: 17vh;
-    width: 100%;
-
+    width: 90%;
+    object-fit: cover;
 }
 </style>

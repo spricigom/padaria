@@ -5,8 +5,7 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 function redirecionarFuncionario(){
-    router.push({name: 'dono'});
-
+    router.push({name: 'Clientes'});
 }
 </script>
 

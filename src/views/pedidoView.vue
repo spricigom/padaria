@@ -2,7 +2,6 @@
 import { reactive } from 'vue';
 import HeaderNav from '@/componentes/HeaderNav.vue'
 import Pedido from '@/componentes/Pedido.vue';
-import PedidoResult from '@/componentes/PedidoResult.vue';
 
 const pedido = reactive ({
     produto:'',
@@ -29,7 +28,7 @@ function salvarPedido(resultPedido) {
     <body>
          <main>
             <Pedido @enviar-pedido="salvarPedido"/>
-            <PedidoResult :pedido="pedido"/>
+
         </main>
 
     <footer></footer>
@@ -38,11 +37,9 @@ function salvarPedido(resultPedido) {
 </template>
 
 <style scoped>
-
 main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('@/assets/comidas.jpg');
-    background-position: 100%;
-    height: 120vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('@/assets/comidas.jpg');
+    object-fit: cover;
 }
 
 

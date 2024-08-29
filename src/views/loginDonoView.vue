@@ -6,7 +6,6 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 function redirecionarDono(){
     router.push({name: 'produtosConsumidos'});
-
 }
 </script>
 

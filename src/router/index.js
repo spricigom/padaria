@@ -26,7 +26,7 @@ const router = createRouter({
     },
     {
       path: '/Cardapio',
-      name: 'Cardapio',
+      name: 'cardapio',
       component: () => import('../views/CardapioView.vue')
     },
     {
@@ -63,7 +63,12 @@ const router = createRouter({
       path: '/fornecedores',
       name: 'fornecedores',
       component: () => import('../views/fornecedoresView.vue')
-    }
+    },
+    {
+      path: '/Produto',
+      name: 'Produto',
+      component: () => import('../views/ProdutoView.vue')
+    }  
   ]
 })
 

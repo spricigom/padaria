@@ -1,12 +1,11 @@
 <script setup>
-import HeaderNav from '@/componentes/HeaderNav.vue'
+import HeaderNav from '@/componentes/HeaderNav.vue';
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <header>
-    <HeaderNav />
-    </header>
-
+    
+    <HeaderNav/>
     <body>
         <div class="fundo">
             <div class="container text-center">
@@ -16,7 +15,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                             <div class="campo">
                                 <h1>PRODUTOS CONSUMIDOS</h1>
                             </div>
-                                <img class="imagem" src="@/assets/pao.jpeg" alt="">
+                             <RouterLink to="loginDono">  <img class="imagem" src="@/assets/pao.jpeg" alt=""></RouterLink> 
                             <div class="campoBaixo">
                                 <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
                             </div>
@@ -27,7 +26,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                             <div class="campo">
                                 <h1>ATENDIMENTO </h1>
                             </div>
-                                <img class="imagem" src="@/assets/atendimento.jpeg" alt="">
+                            <RouterLink to="loginFuncionario"><img class="imagem" src="@/assets/atendimento.jpeg" alt=""> </RouterLink>  
                             <div class="campoBaixo">
                                 <p class="textoBaixo">FAÇA SUA COMPRA ONLINE!</p>
                             </div>
@@ -38,7 +37,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                             <div class="campo">
                                 <h1>VENDAS DE PRODUTOS</h1>
                             </div>
-                                <img class="imagem" src="@/assets/venda.jpg" alt="">
+                              <RouterLink to="loginFuncionario"> <img class="imagem" src="@/assets/venda.jpg" alt=""></RouterLink> 
                             <div class="campoBaixo">
                                 <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
                             </div>

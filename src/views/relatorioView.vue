@@ -1,20 +1,10 @@
 <script setup>
 import HeaderNav from '@/componentes/HeaderNav.vue';
-// const principal = reactive({
-//     email: '',
-//     senha: ''
-
-// })
-// function salvarLogin(novoLogin) {
-//     Object.assign(login, novoLogin)
-// }
 </script>
 
 <template>
-    <header>
-        <headerNav />
-    </header>
-
+   
+    <HeaderNav />
     <body>
         <div class="conteiner">
             <div class="fundoForm"></div>
@@ -39,7 +29,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
                     </div>    
     
                     <div class="Btn text-center">
-                        <button class="botao " type="submit">CONFIRMAR</button>
+                       <RouterLink to="fornecedores"> <button class="botao " type="submit">CONFIRMAR</button> </RouterLink>
  
                     </div>
                 </form>

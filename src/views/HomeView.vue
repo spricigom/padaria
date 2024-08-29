@@ -70,44 +70,23 @@ import { RouterLink } from 'vue-router'
                     </ul>
                     <ul class="navbar-nav">
                         <li>
-                            <h6><a class="nav-link" href="">HOME</a></h6>
+                           <RouterLink to="/" class="nav-link"> <h6>HOME</h6> </RouterLink>
                         </li>
                         <li>
-                            <h6><a class="nav-link" href="">CARDÁPIO</a></h6>
+                           <RouterLink to="cardapio" class="nav-link"> <h6>CARDÁPIO</h6> </RouterLink>
                         </li>
                         <li>
-                            <h6><a class="nav-link" href="">MINHAS COMPRAS</a></h6>
+                           <RouterLink to="relatorio" class="nav-link"><h6> RELATORIO</h6></RouterLink> 
                         </li>
                         <li>
-                            <h6><a class="nav-link" href="">FUNCIONARIOS</a></h6>
+                          <RouterLink to="dono" class="nav-link">  <h6>FUNCIONARIOS</h6> </RouterLink>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <RouterLink to="/dono">Pagina do Dono </RouterLink>
-    <br>
-    <RouterLink to="/loginprincipal">Login Principal </RouterLink>
-    <br>
-    <RouterLink to="/Clientes">Clientes </RouterLink>
-    <br>
-    <RouterLink to="/Cardapio">Cardápio </RouterLink>
-    <br>
-    <RouterLink to="/loginDono">Login Dono</RouterLink>
-    <br>
-    <RouterLink to="/loginCliente">Login Cliente</RouterLink>
-    <br>
-    <RouterLink to="/loginFuncionario">Login Funcionario</RouterLink>
-    <br>
-    <RouterLink to="/produtosConsumidos">produtos Consumidos</RouterLink>
-    <br>
-    <RouterLink to="/relatorio">relatorio</RouterLink>
-    <br>
-    <RouterLink to="/pedido">pedido</RouterLink>
-    <br>
-    <RouterLink to="/fornecedores">fornecedores</RouterLink>
-
+    
 
 
 </template>
@@ -117,6 +96,7 @@ import { RouterLink } from 'vue-router'
 }
 .nav-link {
     color: white;
+    text-decoration: none;
 }
 
 li {

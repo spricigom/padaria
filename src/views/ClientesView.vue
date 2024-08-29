@@ -1,11 +1,9 @@
 <script setup>
-import HeaderNav from '@/componentes/HeaderNav.vue'
+import HeaderNav from '@/componentes/HeaderNav.vue';
 </script>
 
 <template>
-   <header>
-        <HeaderNav/>
-   </header>
+   <HeaderNav/>
     <body>
         <div class="fundo">
             <div class="container text-center">

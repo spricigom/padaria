@@ -1,11 +1,9 @@
 <script setup>
-import HeaderNav from '@/componentes/HeaderNav.vue'
+import HeaderNav from '@/componentes/HeaderNav.vue';
 </script>
-
 <template>
-    <header>
         <HeaderNav />
-    </header>
+
 
     <body>
         <div class="fundo">
@@ -35,9 +33,9 @@ import HeaderNav from '@/componentes/HeaderNav.vue'
                         <p>R$ 5,00 POR FATIA</p>
                     </div>
                     <div class="col">
-                        <img src="@/assets/pao-frances.webp" alt="">
+                     <RouterLink to="produto">   <img src="@/assets/pao-frances.webp" alt=""></RouterLink>
                         <h2>PÃO FRANCÊS</h2>
-                        <p>R$ 12,99 O KG</p>
+                        <p>R$ 0,50 CADA</p>
                     </div>
                 </div>
 
