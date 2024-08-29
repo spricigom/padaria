@@ -107,6 +107,9 @@ import { RouterLink } from 'vue-router'
     <RouterLink to="/pedido">pedido</RouterLink>
     <br>
     <RouterLink to="/fornecedores">fornecedores</RouterLink>
+    <br>
+    <RouterLink to="/Produto">Produto</RouterLink>
+
 
 
 
@@ -133,7 +136,7 @@ li {
     justify-content: space-between;
     display: flex;
     position: relative;
-    bottom: 97vh;
+    bottom: 103vh;
 
 }
 

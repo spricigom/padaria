@@ -109,20 +109,29 @@ function loginPedido() {
 
       <div class="col" id="conteudo">
         <div class="formCampo">
-          <h1>PEDIDO #2139104</h1>
-          .
-          <h3>{{ pedido.produto }}</h3>
-          <h3>{{ pedido.quantidade }}</h3>
-          <h3>{{ pedido.valorUnitario }}</h3>
-          <h3>{{ pedido.valorTotal }}</h3>
-          <h3>{{ pedido.desconto }}</h3>
-          <h3>{{ pedido.email }}</h3>
+          <div class="textoForm text-center">
+            <h1>FAÇA SUA COMPRA</h1>
+            <p>PREENCHA AS INFORMAÇÕES</p>
+          </div>
+          
+          <h4 class="resultado">{{ pedido.produto }}</h4>
+          <h4 class="resultado">{{ pedido.quantidade }}</h4>
+          <h4 class="resultado">{{ pedido.valorUnitario }}</h4>
+          <h4 class="resultado">{{ pedido.valorTotal }}</h4>
+          <h4 class="resultado">{{ pedido.desconto }}</h4>
+          <h4 class="resultado">{{ pedido.email }}</h4>
         </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
+
+
+.resultado{
+  height: 5.5vh;
+  margin-bottom: 5vh;
+}
 input {
   height: 5.5vh;
   margin-bottom: 5vh;
@@ -143,7 +152,7 @@ input {
   border: 0;
   cursor: pointer;
   border-radius: 1.6vw;
-  transition: all 0.3s;
+
 }
 
 #fundo {
@@ -156,7 +165,7 @@ input {
 }
 
 #conteudo {
-  height: 0.1px;
+  height: 0.1px
 }
 
 .formCampo {

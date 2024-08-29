@@ -1,5 +1,4 @@
 <script setup>
-import HeaderNav from '@/componentes/default/HeaderNav.vue';
 // const principal = reactive({
 //     email: '',
 //     senha: ''
@@ -11,9 +10,7 @@ import HeaderNav from '@/componentes/default/HeaderNav.vue';
 </script>
 
 <template>
-    <header>
-        <headerNav />
-    </header>
+   
 
     <body>
         <div class="conteiner">
