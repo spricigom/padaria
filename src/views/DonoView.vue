@@ -1,53 +1,11 @@
 <script setup>
+import HeaderNav from '@/componentes/HeaderNav.vue';
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="@/assets/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        </li>
-                    </ul>
-
-
-
-                    <ul class="navbar-nav">
-                        <li>
-                            <p><a class="nav-link" href="">HOME</a></p>
-                        </li>
-
-                        <li>
-                             <p><a class="nav-link" href="">CARDÁPIO</a></p>
-                        </li>
-
-                        <li>
-                             <p><a class="nav-link" href="">MINHAS COMPRAS</a></p>
-                        </li>
-
-                        <li>
-                             <p><a class="nav-link" href="">FUNCIONARIOS</a></p>
-                        </li>
-                        
-                    </ul>
-
-
-
-                   
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    
+    <HeaderNav/>
     <body>
         <div class="fundo">
             <div class="container text-center">
@@ -57,15 +15,21 @@
                             <div class="campo">
                                 <h1>PRODUTOS CONSUMIDOS</h1>
                             </div>
-                                <img class="imagem" src="@/assets/pao.jpeg" alt="">
+                             <RouterLink to="loginDono">  <img class="imagem" src="@/assets/pao.jpeg" alt=""></RouterLink> 
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="produto">
                             <div class="campo">
-                                <h1>ATENDIMENTO AO CLIENTE</h1>
+                                <h1>ATENDIMENTO </h1>
                             </div>
-                                <img class="imagem" src="@/assets/atendimento.jpeg" alt="">
+                            <RouterLink to="loginFuncionario"><img class="imagem" src="@/assets/atendimento.jpeg" alt=""> </RouterLink>  
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">FAÇA SUA COMPRA ONLINE!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -73,7 +37,10 @@
                             <div class="campo">
                                 <h1>VENDAS DE PRODUTOS</h1>
                             </div>
-                                <img class="imagem" src="@/assets/grafico.png" alt="">
+                              <RouterLink to="loginFuncionario"> <img class="imagem" src="@/assets/venda.jpg" alt=""></RouterLink> 
+                            <div class="campoBaixo">
+                                <p class="textoBaixo">SOMENTE PESSOAS AUTORIZADAS!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,10 +69,15 @@
 
 
 <style scoped>
+.row{
+    padding-top: 3.88vh;
+}
 template{
-max-width: 100vh;}
+max-width: 100vh;
+}
+
 h1{
-    margin-top: 10px;
+    margin-top: 1.29vh;
     font-size: 3.5vh;
 }
 .nav-link{
@@ -113,7 +85,11 @@ h1{
 }
 
 li{
-    margin-right: 60px;
+    margin-left: 3.75vw;
+}
+
+.textoBaixo{
+    font-family: "IM Fell Great Primer", serif;
 }
 
 .navbar-brand{
@@ -131,15 +107,14 @@ li{
 }
 
 .col {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 50px;
+    margin-left: 1.87vw;
+    margin-right: 1.87vw;
+    margin-bottom: 6.46vh;
     height: 100%;
 }
 
 .produto {
-    margin-top: -123px;
-    box-shadow: .00001px -10px;
+    margin-top: -15.91vh;
 }
 
 .produto,
@@ -149,15 +124,31 @@ img {
 
 .imagem{
     height: 68vh;
-    border-radius: 10px;
+    border-radius: 0.8vw;
+}
+h1{
+    font-size: 3.5vh;
+    padding: 4.52vh;
+}
+h6{
+    font-size: 2vh;
 }
 
 .campo {
     height: 15vh;
-    top: 145px;
+    top: 15vh;
     position: relative;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 6.25vw;
+    border-bottom-right-radius: 6.25vw;
+    background-color: #642D0E;
+    color: white;
+}
+.campoBaixo {
+    height: 3.5vh;
+    margin-left: .93vw;
+    margin-right: .93vw;
+    bottom: 6.46vh;
+    position: relative;
     background-color: #642D0E;
     color: white;
 }

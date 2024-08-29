@@ -10,21 +10,65 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    },
-    {
       path: '/dono',
       name: 'dono',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/DonoView.vue')
-    }
+    },
+    {
+      path: '/loginprincipal',
+      name: 'loginprincipal',
+      component: () => import('../views/LoginPrincipalView.vue')
+    },
+    {
+      path: '/Clientes',
+      name: 'Clientes',
+      component: () => import('../views/ClientesView.vue')
+    },
+    {
+      path: '/Cardapio',
+      name: 'cardapio',
+      component: () => import('../views/CardapioView.vue')
+    },
+    {
+      path: '/loginDono',
+      name: 'loginDono',
+      component: () => import('../views/loginDonoView.vue')
+    },
+    {
+      path: '/loginCliente',
+      name: 'loginCliente',
+      component: () => import('../views/loginClienteView.vue')
+    },
+    {
+      path: '/loginFuncionario',
+      name: 'loginFuncionario',
+      component: () => import('../views/LoginFuncionarioView.vue')
+    },
+    {
+      path: '/produtosConsumidos',
+      name: 'produtosConsumidos',
+      component: () => import('../views/produtosConsumidosView.vue')
+    },
+    {
+      path: '/relatorio',
+      name: 'relatorio',
+      component: () => import('../views/relatorioView.vue')
+    },
+    {
+      path: '/pedido',
+      name: 'pedido',
+      component: () => import('../views/pedidoView.vue')
+    },
+    {
+      path: '/fornecedores',
+      name: 'fornecedores',
+      component: () => import('../views/fornecedoresView.vue')
+    },
+    {
+      path: '/Produto',
+      name: 'Produto',
+      component: () => import('../views/ProdutoView.vue')
+    }  
   ]
 })
 
