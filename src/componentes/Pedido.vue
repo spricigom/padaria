@@ -37,62 +37,26 @@ function loginPedido() {
           <div class="form">
             <form @submit.prevent="loginPedido">
               <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  placeholder="PRODUTO:"
-                  style="margin-top: -4.4vh"
-                  v-model="pedido.produto"
-                />
+                <input type="text" class="form-control" id="email" placeholder="PRODUTO:" style="margin-top: -4.4vh"
+                  v-model="pedido.produto" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="QUANTIDADE:"
-                  v-model="pedido.quantidade"
-                />
+                <input type="number" class="form-control" placeholder="QUANTIDADE:" v-model="pedido.quantidade" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="VALOR UNITÁRIO"
-                  v-model="pedido.valorUnitario"
-                />
+                <input type="number" class="form-control" placeholder="VALOR UNITÁRIO" v-model="pedido.valorUnitario" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="VALOR TOTAL"
-                  v-model="pedido.valorTotal"
-                />
+                <input type="number" class="form-control" placeholder="VALOR TOTAL" v-model="pedido.valorTotal" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="VALOR COM DESCONTO"
-                  v-model="pedido.desconto"
-                />
+                <input type="number" class="form-control" placeholder="VALOR COM DESCONTO" v-model="pedido.desconto" />
               </div>
               <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="E-MAIL:"
-                  v-model="pedido.email"
-                />
+                <input type="email" class="form-control" placeholder="E-MAIL:" v-model="pedido.email" />
               </div>
               <div class="mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="SENHA:"
-                  v-model="pedido.senha"
-                />
+                <input type="password" class="form-control" placeholder="SENHA:" v-model="pedido.senha" />
               </div>
 
               <p style="font-size: 2vh; margin-top: -30px">Primeira vez? Faça o seu cadastro!</p>
@@ -110,28 +74,34 @@ function loginPedido() {
       <div class="col" id="conteudo">
         <div class="formCampo">
           <div class="textoForm text-center">
-            <h1>FAÇA SUA COMPRA</h1>
-            <p>PREENCHA AS INFORMAÇÕES</p>
+            <h1>REVISE SUA COMPRA</h1>
+            <p>CONFIRME AS INFORMAÇÕES</p>
           </div>
-          
+
           <h4 class="resultado">{{ pedido.produto }}</h4>
           <h4 class="resultado">{{ pedido.quantidade }}</h4>
           <h4 class="resultado">{{ pedido.valorUnitario }}</h4>
           <h4 class="resultado">{{ pedido.valorTotal }}</h4>
           <h4 class="resultado">{{ pedido.desconto }}</h4>
           <h4 class="resultado">{{ pedido.email }}</h4>
+
+          <button class="botao" id="enviar" @click="loginPedido">ENVIAR</button>
         </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
+#enviar{
+  position: relative;
+  top: 15vh;
+}
 
-
-.resultado{
+.resultado {
   height: 5.5vh;
   margin-bottom: 5vh;
 }
+
 input {
   height: 5.5vh;
   margin-bottom: 5vh;

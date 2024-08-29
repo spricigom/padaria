@@ -136,7 +136,7 @@ li {
     justify-content: space-between;
     display: flex;
     position: relative;
-    bottom: 103vh;
+    bottom: 97vh;
 
 }
 

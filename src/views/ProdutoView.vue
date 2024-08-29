@@ -7,24 +7,7 @@
                     <h5>No pix</h5>
                 </div>
                 <div class="login">
-                    <form>
-                        <div class="mt-10">
-                            <input type="email" placeholder="E-MAIL">
-                        </div>
-                        <div class="">
-                            <input type="password" placeholder="SENHA">
-
-                        </div>
-
-                        <p style="font-size: 2vh;">Primeira vez? Faça o seu cadastro!</p>
-                        <div class="links">
-<p style="font-size: 2vh;"><a href="#"
-                            style=" text-decoration: none;">CLIENTE</a> - <a href="#"
-                            style=" text-decoration: none;">FUNCIONÁRIO</a> - <a href="#"
-                            style=" text-decoration: none;">SUPERIOR</a></p>
-                        </div>
-                    
-                    </form>
+            <p>crosta dourada e crocante por fora, interior macio e arejado por dentro. O aroma irresistível e o sabor inigualável fazem dele o companheiro perfeito para qualquer refeição. Um clássico que transforma cada mordida em um momento de prazer!</p>
 
                     
                 </div>
@@ -49,6 +32,7 @@ button{
     cursor: pointer;
     border-radius: 15px;
     font-family: 'Josefin Sans', sans-serif
+    tr
 }
 .links{
     color: black;
