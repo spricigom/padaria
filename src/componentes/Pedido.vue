@@ -108,7 +108,9 @@ function loginPedido() {
       </div>
 
       <div class="col" id="conteudo">
-        <div class="formCampo">
+
+        
+        <div class="formResultado">
           <div class="textoForm text-center">
             <h1>REVISE SUA COMPRA</h1>
             <p>CONFIRME AS INFORMAÇÕES</p>
@@ -163,7 +165,9 @@ input {
 #fundo {
   background-color: #4d1c01;
   color: white;
-  margin: 12vh;
+  margin-top: 12vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
   height: 105vh;
   opacity: 92%;
   border-radius: 40px;
@@ -178,18 +182,42 @@ input {
   height: 100vh;
   position: relative;
   border-radius: 5vh;
-  bottom: 130vh;
+  bottom: 120vh;
   margin: 13vh;
-  right: 1vw;
+  right: 4.5vw;
+  width: 30vw;
 }
 
 .formCampo h1 {
   font-family: 'Inder', sans-serif;
   padding-top: 3.8vh;
-  font-size: 5.5vh;
+  font-size: 5vh;
 }
 
 .formCampo p {
+  font-family: 'Inder', sans-serif;
+  padding-top: 1vh;
+  font-size: 2.3vh;
+}
+
+.formResultado {
+  color: white;
+  height: 100vh;
+  position: relative;
+  border-radius: 5vh;
+  bottom: 120vh;
+  margin: 13vh;
+  width: 30vw;
+  left: 31vw;
+}
+
+.formResultado h1 {
+  font-family: 'Inder', sans-serif;
+  padding-top: 3.8vh;
+  font-size: 5vh;
+}
+
+.formResultado p {
   font-family: 'Inder', sans-serif;
   padding-top: 1vh;
   font-size: 2.3vh;

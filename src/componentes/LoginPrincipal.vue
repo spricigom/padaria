@@ -16,9 +16,7 @@ function login() {
 <template>
 
     <body>
-        <div class="conteiner">
-            <img src="@/assets/vitrinePadaria.jpg" alt="" />
-        </div>
+     
         <div class="fundoForm"></div>
 
         <div class="formCampo text-center">
@@ -53,14 +51,13 @@ function login() {
     margin: 0;
 }
 
-.conteiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    margin-bottom: -1000px;
-}
 
+body{
+display: flex;
+justify-content: center;
+text-align: center;
+
+}
 .form {
     margin: 50px;
 }
@@ -101,13 +98,14 @@ input {
 
 .fundoForm {
     opacity: 92%;
-    height: 500px;
+    height: 540px;
     width: 500px;
     background-color: #4d1c01;
-    position: relative;
-    top: 200px;
-    left: 565px;
     border-radius: 40px;
+    position: relative;
+    left: 250px;
+    top: 10vh;
+
 }
 
 .formCampo {
@@ -115,11 +113,34 @@ input {
     height: 500px;
     width: 500px;
     position: relative;
-    bottom: 300px;
-    left: 565px;
+    right: 250px;
     border-radius: 40px;
+    top: 10vh;
 }
+@media screen  and (max-width: 2510px){
+    .fundoForm{
+        background-color: #4d1c01;
+        width: 40vw;
+        height: 50vh;
+        left: 20vw;
+    }
+    .formCampo {
+        width: 40vw;
+        height: 50vh;
+        right: 20vw;
+    }
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 1.2vw; 
+    }
+    .botao {
+    height: 5vh;
+    width: 15vw;
+    font-size: 1vw;
+    }
 
+}
 .formCampo h1 {
     padding-top: 30px;
     font-family: 'Inder', sans-serif;
