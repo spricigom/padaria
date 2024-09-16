@@ -85,17 +85,14 @@ input {
     border-radius: 25px;
     transition: all 0.3s;
 }
-
-.textoCadastro {
-    font-size: 1vh;
-}
-
 .botao:hover {
     height: 44.444px;
     width: 200px;
     background-color: rgb(255, 102, 14);
 }
-
+.textoCadastro {
+    font-size: 1vh;
+}
 .fundoForm {
     opacity: 92%;
     height: 540px;
@@ -141,6 +138,66 @@ input {
     }
 
 }
+@media screen  and (max-width: 2864px){
+    .fundoForm{
+        background-color: #4d1c01;
+        width: 40vw;
+        height: 50vh;
+        left: 20vw;
+    }
+    .formCampo {
+        width: 40vw;
+        height: 50vh;
+        right: 20vw;
+    }
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 1.2vw; 
+    }
+    .botao {
+    height: 5vh;
+    width: 15vw;
+    font-size: 1vw;
+    }
+
+}
+
+@media screen  and (max-width: 1850px){
+    .fundoForm{
+        background-color: #4d1c01;
+        width: 40vw;
+        height: 70vh;
+        left: 20vw;
+    }
+    .formCampo {
+        width: 40vw;
+        height: 50vh;
+        right: 20vw;
+    }
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 1vw; 
+    }
+    input{
+        height: 7vh;
+    }
+    .botao {
+    height: 5vh;
+    width: 15vw;
+    font-size: 1vw;
+    }
+
+}
+@media screen  and (max-width: 1700px){
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 1.7vw; 
+    }
+}
+
 .formCampo h1 {
     padding-top: 30px;
     font-family: 'Inder', sans-serif;
