@@ -167,7 +167,7 @@ input {
     .fundoForm{
         background-color: #4d1c01;
         width: 40vw;
-        height: 70vh;
+        height: 65vh;
         left: 20vw;
     }
     .formCampo {
@@ -194,10 +194,78 @@ input {
     ::placeholder {
     font-family: 'Inder', sans-serif;
     padding-left: 2vh;
-    font-size: 1.7vw; 
+    font-size: 1.2vw; 
+    }
+}
+@media screen  and (max-width: 1400px){
+    .botao {
+    height: 5vh;
+    width: 20vw;
+    font-size: 1.4vw;
+    }
+}
+@media screen  and (max-width: 1313px){
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 1.3vw; 
     }
 }
 
+
+@media screen  and (max-width: 1135px){
+    .fundoForm{
+        background-color: #4d1c01;
+        width: 50vw;
+        height: 65vh;
+        left: 25vw;
+    }
+    .formCampo {
+        width: 50vw;
+        height: 50vh;
+        right: 25vw;
+    }
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 1.4vw; 
+    }
+    .botao {
+    height: 5.3vh;
+    width: 25vw;
+    font-size: 1.4vw;
+    }
+}
+@media screen  and (max-width: 1024px){
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 1.5vw; 
+    }
+}
+@media screen  and (max-width: 768px){
+    .fundoForm{
+        background-color: #4d1c01;
+        width: 70vw;
+        height: 65vh;
+        
+    }
+    .formCampo {
+        width: 80vw;
+        height: 50vh;
+    
+    }
+    ::placeholder {
+    font-family: 'Inder', sans-serif;
+    padding-left: 2vh;
+    font-size: 2vw; 
+    }
+    .botao {
+    height: 5.3vh;
+    width: 30vw;
+    font-size: 2vw;
+    }
+}
 .formCampo h1 {
     padding-top: 30px;
     font-family: 'Inder', sans-serif;
