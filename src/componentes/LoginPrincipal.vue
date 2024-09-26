@@ -16,7 +16,7 @@ function login() {
 <template>
 
     <body>
-     
+
         <div class="fundoForm"></div>
 
         <div class="formCampo text-center">
@@ -36,7 +36,8 @@ function login() {
                     <p style="font-size: 2vh; margin-top: -30px">Primeira vez? Faça o seu cadastro!</p>
                     <p style="font-size: 2vh; margin-top: -20px">
                         <RouterLink to="loginCliente" style="color: white; text-decoration: none">CLIENTE</RouterLink> -
-                        <RouterLink to="loginFuncionario" style="color: white; text-decoration: none">FUNCIONÁRIO</RouterLink>
+                        <RouterLink to="loginFuncionario" style="color: white; text-decoration: none">FUNCIONÁRIO
+                        </RouterLink>
                         - <RouterLink to="loginDono" style="color: white; text-decoration: none">SUPERIOR</RouterLink>
                     </p>
                     <button class="botao" type="submit">CONFIRMAR</button>
@@ -52,12 +53,13 @@ function login() {
 }
 
 
-body{
-display: flex;
-justify-content: center;
-text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
 }
+
 .form {
     margin: 50px;
 }
@@ -85,14 +87,17 @@ input {
     border-radius: 25px;
     transition: all 0.3s;
 }
+
 .botao:hover {
     height: 44.444px;
     width: 200px;
     background-color: rgb(255, 102, 14);
 }
+
 .textoCadastro {
     font-size: 1vh;
 }
+
 .fundoForm {
     opacity: 92%;
     height: 540px;
@@ -114,158 +119,223 @@ input {
     border-radius: 40px;
     top: 10vh;
 }
-@media screen  and (max-width: 2510px){
-    .fundoForm{
+
+@media screen and (max-width: 2510px) {
+    .fundoForm {
         background-color: #4d1c01;
         width: 40vw;
         height: 50vh;
         left: 20vw;
     }
+
     .formCampo {
         width: 40vw;
         height: 50vh;
         right: 20vw;
     }
+
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 1.2vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 1.2vw;
     }
+
     .botao {
-    height: 5vh;
-    width: 15vw;
-    font-size: 1vw;
+        height: 5vh;
+        width: 15vw;
+        font-size: 1vw;
     }
 
 }
-@media screen  and (max-width: 2864px){
-    .fundoForm{
+
+@media screen and (max-width: 2864px) {
+    .fundoForm {
         background-color: #4d1c01;
         width: 40vw;
         height: 50vh;
         left: 20vw;
     }
+
     .formCampo {
         width: 40vw;
         height: 50vh;
         right: 20vw;
     }
+
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 1.2vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 1.2vw;
     }
+
     .botao {
-    height: 5vh;
-    width: 15vw;
-    font-size: 1vw;
+        height: 5vh;
+        width: 15vw;
+        font-size: 1vw;
     }
 
 }
 
-@media screen  and (max-width: 1850px){
-    .fundoForm{
+@media screen and (max-width: 1850px) {
+    .fundoForm {
         background-color: #4d1c01;
         width: 40vw;
         height: 65vh;
         left: 20vw;
     }
+
     .formCampo {
         width: 40vw;
         height: 50vh;
         right: 20vw;
     }
+
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 1vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 1vw;
     }
-    input{
+
+    input {
         height: 7vh;
     }
+
     .botao {
-    height: 5vh;
-    width: 15vw;
-    font-size: 1vw;
+        height: 5vh;
+        width: 15vw;
+        font-size: 1vw;
     }
 
 }
-@media screen  and (max-width: 1700px){
+
+@media screen and (max-width: 1700px) {
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 1.2vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 1.2vw;
     }
 }
-@media screen  and (max-width: 1400px){
+
+@media screen and (max-width: 1400px) {
     .botao {
-    height: 5vh;
-    width: 20vw;
-    font-size: 1.4vw;
+        height: 5vh;
+        width: 20vw;
+        font-size: 1.4vw;
     }
 }
-@media screen  and (max-width: 1313px){
+
+@media screen and (max-width: 1313px) {
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 1.3vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 1.3vw;
     }
 }
 
 
-@media screen  and (max-width: 1135px){
-    .fundoForm{
+@media screen and (max-width: 1135px) {
+    .fundoForm {
         background-color: #4d1c01;
         width: 50vw;
         height: 65vh;
         left: 25vw;
     }
+
     .formCampo {
         width: 50vw;
         height: 50vh;
         right: 25vw;
     }
+
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 1.4vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 1.4vw;
     }
+
     .botao {
-    height: 5.3vh;
-    width: 25vw;
-    font-size: 1.4vw;
+        height: 5.3vh;
+        width: 25vw;
+        font-size: 1.4vw;
     }
 }
-@media screen  and (max-width: 1024px){
+
+@media screen and (max-width: 1024px) {
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 1.5vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 1.5vw;
     }
 }
-@media screen  and (max-width: 768px){
-    .fundoForm{
+
+@media screen and (max-width: 768px) {
+    .fundoForm {
         background-color: #4d1c01;
         width: 70vw;
         height: 65vh;
-        
+
     }
+
     .formCampo {
         width: 80vw;
         height: 50vh;
-    
+
     }
+
     ::placeholder {
-    font-family: 'Inder', sans-serif;
-    padding-left: 2vh;
-    font-size: 2vw; 
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 2vw;
     }
+
     .botao {
-    height: 5.3vh;
-    width: 30vw;
-    font-size: 2vw;
+        height: 5.3vh;
+        width: 30vw;
+        font-size: 2vw;
     }
 }
+
+@media screen and (max-width: 425px) {
+    body {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .fundoForm {
+        background-color: #4d1c01;
+        width: 100vw;
+        height: 64vh;
+        left: 0;
+
+    }
+
+    .formCampo {
+        width: 100vw;
+        height: 80vh;
+        left: 0;
+        top: -50vh;
+
+    }
+
+    ::placeholder {
+        font-family: 'Inder', sans-serif;
+        padding-left: 2vh;
+        font-size: 3.4vw;
+    }
+
+    .botao {
+        height: 5.3vh;
+        width: 50vw;
+        font-size: 3.5vw;
+        margin-top: 2vh;
+    }
+}
+
+
+
+
 .formCampo h1 {
     padding-top: 30px;
     font-family: 'Inder', sans-serif;

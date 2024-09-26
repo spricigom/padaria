@@ -107,6 +107,9 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
                         <div class="clientes">
                             <p>VENDA6: Heloisa  ..... 20 pão de queijo. R$22,00</p>                       
                         </div>
+                         <div class="clientes">
+                            <RouterLink to="CadastroProduto" class="botao" >Cadastrar Produto</RouterLink>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,4 +241,15 @@ img {
     width: 90%;
     object-fit: cover;
 }
+.botao {
+    height: 5vh;
+    width: 23vw;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 1.6vw;
+    transition: all 0.3s;
+}
+
 </style>
