@@ -5,7 +5,7 @@ const cliente = reactive({
     nome: '',
     cpf: '',
     cidade: '',
-    bairro: '',
+    cep: '',
     numero:'',
     nascimento:'',
     telefone: '',
@@ -51,7 +51,7 @@ function loginCliente(){
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="BAIRRO:" v-model="cliente.bairro">
+                                    <input type="number" class="form-control" placeholder="CEP:" v-model="cliente.cep">
                                 </div>
                             </div>
                             <div class="col">

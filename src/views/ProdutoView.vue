@@ -9,7 +9,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
         <div class="produto">
             <div class="conteudo">
                 <div class="preco">
-                    <h2>R$ 0,50 Cada</h2>
+                    <h2>R$ 1,00 Cada</h2>
                     <h5>No pix</h5>
                 </div>
                 <div class="login">

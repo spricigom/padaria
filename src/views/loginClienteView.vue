@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 function redirecionarCliente(){
-    router.push({name: 'Cardapio'});
+    router.push({name: 'cardapio'});
 
 }
 </script>

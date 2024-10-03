@@ -35,7 +35,7 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
                     <div class="col">
                      <RouterLink to="produto">   <img src="@/assets/pao-frances.webp" alt=""></RouterLink>
                         <h2>PÃO FRANCÊS</h2>
-                        <p>R$ 0,50 CADA</p>
+                        <p>R$ 1,00 CADA</p>
                     </div>
                 </div>
 

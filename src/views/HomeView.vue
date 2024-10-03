@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router'
                     <img src="@/assets/cafe.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       
-                        <h5>BEM -VINDO A <br> PADARAIA SANTO PÃO</h5>
+                        <h5>BEM-VINDO A <br> PADARAIA SANTO PÃO</h5>
                         <p>Faça seu login</p>
                     </div>
                 </div>
@@ -124,6 +124,8 @@ h5 {
     height: 3.5vh;
     width: 3.5vh;
     border-radius: 100%;
+    position: relative;
+    bottom: 4vh;
 }
 
 </style>

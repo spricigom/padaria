@@ -40,7 +40,7 @@ function salvarPedido(resultPedido) {
 main{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('@/assets/comidas.jpg');
     background-position: 100%;
-    height: 230vh;
+    height: 130vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
