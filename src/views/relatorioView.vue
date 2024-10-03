@@ -51,19 +51,6 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .fundoForm{
-        height: 100vh;
-        width: 100vw;
-        position: relative;
-    }
-    .formCampo{
-        margin: 0;
-       width: 20vw ;
-       background-color: red;
-       height: 30vh;
-    }
-}
 
 body{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('@/assets/comidas.jpg');
