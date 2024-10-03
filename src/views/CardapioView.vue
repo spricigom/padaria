@@ -123,5 +123,7 @@ img {
     width: 230px;
     height: 230px;
     border: 12px #461212 solid;
+
+    
 }
 </style>
