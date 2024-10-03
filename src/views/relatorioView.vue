@@ -56,8 +56,9 @@ import HeaderNav from '@/componentes/HeaderNav.vue';
 body{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('@/assets/comidas.jpg');
     background-position: 100%;
-    height: 110vh;
-    
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .conteiner {
     display: flex;

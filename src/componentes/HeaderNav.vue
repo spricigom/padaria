@@ -42,6 +42,7 @@
 li{
     margin-left: 60px;
 }
+
 .navbar-brand{
     width: 18vh;
 }

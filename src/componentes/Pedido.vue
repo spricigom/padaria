@@ -20,8 +20,8 @@ function loginPedido() {
 <template>
   <div class="container text-center">
     <div class="row">
-      <div class="col" id="fundo"></div>
-      <div class="col" id="fundo"></div>
+      <div class="col" id="fundo1"></div>
+      <div class="col" id="fundo2"></div>
     </div>
   </div>
 
@@ -37,62 +37,26 @@ function loginPedido() {
           <div class="form">
             <form @submit.prevent="loginPedido">
               <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  placeholder="PRODUTO:"
-                  style="margin-top: -4.4vh"
-                  v-model="pedido.produto"
-                />
+                <input type="text" class="form-control" id="email" placeholder="PRODUTO:" style="margin-top: -4.4vh"
+                  v-model="pedido.produto" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="QUANTIDADE:"
-                  v-model="pedido.quantidade"
-                />
+                <input type="number" class="form-control" placeholder="QUANTIDADE:" v-model="pedido.quantidade" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="VALOR UNITÁRIO"
-                  v-model="pedido.valorUnitario"
-                />
+                <input type="number" class="form-control" placeholder="VALOR UNITÁRIO" v-model="pedido.valorUnitario" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="VALOR TOTAL"
-                  v-model="pedido.valorTotal"
-                />
+                <input type="number" class="form-control" placeholder="VALOR TOTAL" v-model="pedido.valorTotal" />
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="VALOR COM DESCONTO"
-                  v-model="pedido.desconto"
-                />
+                <input type="number" class="form-control" placeholder="VALOR COM DESCONTO" v-model="pedido.desconto" />
               </div>
               <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="E-MAIL:"
-                  v-model="pedido.email"
-                />
+                <input type="email" class="form-control" placeholder="E-MAIL:" v-model="pedido.email" />
               </div>
               <div class="mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="SENHA:"
-                  v-model="pedido.senha"
-                />
+                <input type="password" class="form-control" placeholder="SENHA:" v-model="pedido.senha" />
               </div>
 
               <p style="font-size: 2vh; margin-top: -30px">Primeira vez? Faça o seu cadastro!</p>
@@ -109,7 +73,7 @@ function loginPedido() {
 
       <div class="col" id="conteudo">
 
-        
+
         <div class="formResultado">
           <div class="textoForm text-center">
             <h1>REVISE SUA COMPRA</h1>
@@ -162,7 +126,18 @@ input {
   border-radius: 1.6vw;
 }
 
-#fundo {
+#fundo1 {
+  background-color: #4d1c01;
+  color: white;
+  margin-top: 12vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  height: 105vh;
+  opacity: 92%;
+  border-radius: 40px;
+}
+
+#fundo2 {
   background-color: #4d1c01;
   color: white;
   margin-top: 12vh;
@@ -179,13 +154,13 @@ input {
 
 .formCampo {
   color: white;
-  height: 100vh;
+  margin-top: 12vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  height: 105vh;
+  border-radius: 40px;
   position: relative;
-  border-radius: 5vh;
-  bottom: 120vh;
-  margin: 13vh;
-  right: 4.5vw;
-  width: 30vw;
+  bottom: 117vh;
 }
 
 .formCampo h1 {
@@ -202,13 +177,13 @@ input {
 
 .formResultado {
   color: white;
-  height: 100vh;
+  margin-top: 12vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  height: 105vh;
+  border-radius: 40px;
   position: relative;
-  border-radius: 5vh;
-  bottom: 120vh;
-  margin: 13vh;
-  width: 30vw;
-  left: 31vw;
+  bottom: 117vh;
 }
 
 .formResultado h1 {
@@ -226,4 +201,48 @@ input {
 .form {
   margin: 6.36vh;
 }
+
+@media screen and (max-width: 768px) {
+  #fundo1{
+    height: 117vh;
+    margin-top: 5vh;
+  }
+  #fundo2{
+    height: 117vh;
+    margin-top: 5vh;
+  }
+  .formCampo{
+    bottom:130vh
+  }
+  .formResultado{
+    bottom:130vh
+  }
+  #enviar{
+    top:22vh
+  }
+}
+@media screen and (max-width: 425px) {
+  #fundo1{
+    display: none;
+  }
+  #fundo2{
+    display: none;
+  }
+  .formCampo{
+    margin-top: 5vh;
+    bottom: 0;
+    background-color: #4d1c01;
+  }
+  .formResultado{
+    position: relative;
+    top: 105vh;
+    background-color: #4d1c01;
+    height: 100vh;
+  }
+  #enviar{
+    top: 10vh;
+    font-size: 2vh;
+  }
+}
+
 </style>
